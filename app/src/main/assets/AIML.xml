@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DataObject>
+    <DataObject>
+        <action>text</action>
+        <pattern>gửi cho ${target}${message}</pattern>
+    </DataObject>
+    <DataObject>
+        <action>call</action>
+        <pattern>gọi cho ${target}</pattern>
+    </DataObject>
+    <DataObject>
+        <action>alarm</action>
+        <pattern>báo thức lúc ${hour} giờ ${minute}</pattern>
+    </DataObject>
+    <DataObject>
+        <action>openApp</action>
+        <pattern>mở ${appname}</pattern>
+    </DataObject>
+    <DataObject>
+        <action>check mail</action>
+        <pattern>check mail</pattern>
+    </DataObject>
+    <DataObject>
+        <action>newspaper</action>
+        <pattern>đọc báo</pattern>
+    </DataObject>
+</DataObject>

@@ -1,0 +1,83 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/RESULT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/etTextHint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="top"
+        android:hint="@string/etSearchHint"
+        android:inputType="textMultiLine"
+        android:lines="1" />
+
+    <Button
+        android:id="@+id/btSpeak"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="speak"
+        android:padding="@dimen/padding_medium"
+        android:text="@string/btSpeak"
+        tools:context=".VoiceRecognitionActivity" />
+
+    <Button android:id="@+id/play"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="startService"
+        android:text="Play">
+    </Button>
+    <Button android:id="@+id/stop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="stopService"
+        android:text="Stop">
+    </Button>
+    startapp
+    <Button
+        android:id="@+id/StartAPp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="startapp"
+        android:padding="@dimen/padding_medium"
+        android:text="Star facebook"
+        tools:context=".VoiceRecognitionActivity" />
+    <Button
+        android:id="@+id/FindIns"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="InstalledApps"
+        android:padding="@dimen/padding_medium"
+        android:text="@string/btSpeak"
+        tools:context=".VoiceRecognitionActivity" />
+
+    <Spinner
+        android:id="@+id/sNoOfMatches"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/saNoOfMatches"
+        android:prompt="@string/sNoOfMatches" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/tvTextMatches"
+        android:textStyle="bold" />
+
+    <ListView
+        android:id="@+id/lvTextMatches"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
